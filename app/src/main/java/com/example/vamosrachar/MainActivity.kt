@@ -7,9 +7,11 @@ import android.speech.tts.TextToSpeech
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.view.Gravity
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.core.widget.addTextChangedListener
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
@@ -32,6 +34,11 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         shareButton = findViewById(R.id.share)
         soundButton = findViewById(R.id.sound)
         tts = TextToSpeech(this, this)
+
+        //melhorias de acessibilidade
+        soundButton.contentDescription = "Escutar o valor"
+        shareButton.contentDescription = "Compartilhar o valor"
+
 
         etPrice.addTextChangedListener {
             if (!etPrice.text.isNullOrEmpty() && !etPersons.text.isNullOrEmpty()) {
