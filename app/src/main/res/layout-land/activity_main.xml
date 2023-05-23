@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSecondary"
+    android:foregroundTint="#D10606"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="56dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="516dp"
+                android:backgroundTint="?colorSecondaryVariant"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_sound"
+                app:tint="?colorOnPrimary" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="516dp"
+                android:clickable="true"
+                android:foregroundTint="?colorOnPrimary"
+                android:tint="?colorOnPrimary"
+                app:backgroundTint="?colorSecondaryVariant"
+                app:rippleColor="?colorOnPrimary"
+                app:srcCompat="@drawable/ic_share"
+                app:tint="?colorOnPrimary" />
+
+            <TextView
+                android:id="@+id/v_individual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                android:fontFamily="@font/exo_2"
+                android:text="Valor individual:"
+                android:textAlignment="center"
+                android:textColor="?colorOnSecondary"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="284dp"
+                android:text="R$ 0,00"
+                android:textColor="?colorOnSecondary"
+                android:textSize="34sp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="36dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="164dp"
+                app:srcCompat="@drawable/ic_persons" />
+
+            <EditText
+                android:id="@+id/persons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="156dp"
+                android:ems="10"
+                android:hint="Número de pessoas"
+                android:inputType="number"
+                android:text=""
+                android:textColor="?colorOnSecondary"
+                android:textColorHint="?colorOnSecondary"
+                android:textColorLink="?colorOnSecondary" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="156dp"
+                android:ems="10"
+                android:hint="Valor Total"
+                android:inputType="number"
+                android:text=""
+                android:textColor="?colorOnSecondary"
+                android:textColorHighlight="?colorOnSecondary"
+                android:textColorHint="?colorOnSecondary"
+                android:textColorLink="?colorOnSecondary" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="156dp"
+                app:srcCompat="@drawable/ic_money" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/exo_2_semibold"
+                android:text="Vamos Rachar"
+                android:textAlignment="center"
+                android:textColor="?colorOnSecondary"
+                android:textSize="34sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

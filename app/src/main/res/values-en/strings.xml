@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lets Crack</string>
+    <string name ="value">Total amount</string>
+    <string name ="number_people">Number of people</string>
+    <string name="individual_value"> Individual value</string>
+</resources>
